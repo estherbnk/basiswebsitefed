@@ -56,10 +56,10 @@ Over ons
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/homeschets" width="375px" alt="homepagina schets">
+<img src="images/homeschets.png" width="375px" alt="homepagina schets">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/overonsschets" width="375px" alt="over onspagina schets">
+<img src="images/overonsschets.png" width="375px" alt="over onspagina schets">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
