@@ -8,60 +8,254 @@
   padding: 0;
 }
 
-section:first-of-type{
-  background-image: url("../images/foto1.jpg");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@600&display=swap');
+
+
+header{
+    background-color: #F7F7F7;
+    display: grid;
+    grid-template-columns:min-content;
+    align-items: center;
+    top: 0;
+}
+
+/* DEZE GAAT FOUT MET MENUUUUUUU */
+header section{
+  display: flex;
+  align-items: center;
 }
 
 
-section:nth-of-type(2){
-  background-image: url("../images/foto2.png");
-}
-
-
-section:nth-of-type(3){
-  background-image: url("../images/foto3.png");
-}
-
-
-section:nth-of-type(4){
-  background-image: url("../images/foto4.png");
-}
-
-
-img{
-  width: 50%;
-}
-
-
+/* height toegevoegd omdat het anders smaller werd */
 img.logo{
-  width: 10%;
+  min-width: 2em;
+  max-width: 4em;
+  min-height: 2em;
+  max-height: 4em;
 }
 
+
+/* height toegevoegd omdat het anders smaller werd */
 img.locatie{
-  width: 10%;
+  min-width: 2em;
+  max-width: 4em;
+  min-height: 2em;
+  max-height: 4em;
+  margin-left: auto;
 }
 
 
-h1{
+main section{
+  /* elementen in de section centreren */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main section:first-of-type{
+  position: relative;
+}
+
+
+main section:first-of-type img{
+  width: 100%;
+}
+
+
+main section:first-of-type h1{
+  position: absolute;
+  top: 5%;
+  font-size: 7vw;
+  padding: 1em;
   color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+
+main section:first-of-type ul{
+  position: absolute;
+  top: 10%;
+  font-size: 2vw;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+
+
+main section:first-of-type ul:nth-of-type(2){
+  top: 4em;
+}
+
+
+main section:first-of-type ul li{
+  color: white;
+  position: relative;
+  width: 25%;
+  text-align: center;
+  padding: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* +new+ items gaan -0.5em boven de li items */
+/* left & right 0 betekent dat het de volledige breedte van li is */
+main section:first-of-type ul li span{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -0.5em;
+}
+
+
+main section:nth-of-type(2){
+  background-color: #e50e35;
+}
+
+
+main section:nth-of-type(2) img{
+  width: 90vw;
+}
+
+
+main section:nth-of-type(3){
+  background-color: #1E3932;
+}
+
+
+main section:nth-of-type(3) img{
+  width: 90vw;
+}
+
+
+main section:nth-of-type(4){
+  background-color: #e50e35;
+}
+
+
+main section:nth-of-type(4) img{
+  width: 90vw;
+}
+
+main span{
+  color: #1E3932;
+}
+
+
 
 h2{
   color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 6vw;
 }
 
+
+h3{
+  color: white;
+  font-family: 'Courgette', cursive;
+  font-size: 5vw;
+  padding: 1em;
+}
+
+
 a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 
-main ul{
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
+
+/* MENU */
+
+/* menu button */
+nav button{
+  width: 1em;
+  height: 1em;
+  border: none;
+
+  position: relative;
+  z-index: 100;
 }
 
-main li{
-  color: white;
+/* om menu boven de rest vd items te krijgen in header */
+/* nav {
+  order:-1;  
+} */
+
+button{
+  position: relative;
+  left: 25em;
+  bottom: 5em;
+  background-color: white;
+}
+
+
+nav button::before{ 
+  content: "\2630 ";  /* hamburger menu */
+  transform: scale(.75); 
+}
+
+
+nav.toonMenu button::before{
+  content: "/274C"; /* kruisje */
+}
+
+
+/* menu met de linkjes naar pagina's */
+nav ul{
+  list-style: none;
+  padding: 3em; /* padding 3em voor de bovenkant */
+  background-color: black;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: .5s;
+
+  z-index: 99;
+}
+
+nav.toonMenu ul{
+  transform: scaleY(1);
+}
+
+/* een linkje in de menulijst */
+nav li{
+  margin: 0;
+  padding: 0;
+}
+
+nav a{
+  display: flex;
+  align-items: center;
+  padding: .25em 1em;
+  border: none;
+}
+
+@media (min-width:64em){
+  nav{
+    justify-self: center;
+    order: 0;
+  }
+}
+
+/* nav button{
+  display: none;
+} */
+
+nav ul{
+  position: absolute;
+  transform: none;
+
+  display: flex;
+
+  padding: 0;
+  background: none;
+
 }
