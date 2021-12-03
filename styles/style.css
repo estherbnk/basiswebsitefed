@@ -52,6 +52,8 @@ main section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3em;
+  background-color: #DB0032;
 }
 
 
@@ -67,9 +69,8 @@ main section:first-of-type img{
 
 main section:first-of-type h1{
   position: absolute;
-  top: 5%;
-  font-size: 7vw;
-  padding: 1em;
+  top: 1%;
+  font-size: 9vw;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -77,19 +78,15 @@ main section:first-of-type h1{
 
 main section:first-of-type ul{
   position: absolute;
-  top: 10%;
+  top: 15%;
   font-size: 2vw;
-  padding: 1em;
   display: flex;
   flex-direction: row;
   list-style: none;
+  padding: 1em;
 }
 
 
-
-main section:first-of-type ul:nth-of-type(2){
-  top: 4em;
-}
 
 
 main section:first-of-type ul li{
@@ -97,7 +94,7 @@ main section:first-of-type ul li{
   position: relative;
   width: 25%;
   text-align: center;
-  padding: 1em;
+  padding: 0.75em;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -151,6 +148,8 @@ h2{
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 6vw;
+  width: 65vw;
+  text-align: center;
 }
 
 
@@ -197,6 +196,9 @@ button{
 nav button::before{ 
   content: "\2630 ";  /* hamburger menu */
   transform: scale(.75); 
+  width: 2em;
+  height: 1em;
+  font-size: 20px;
 }
 
 
