@@ -6,6 +6,15 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@600&display=swap"
+		rel="stylesheet">
+
 	<title>Starbucks home</title>
 
 	<link href="styles/style.css" rel="stylesheet">
@@ -14,12 +23,18 @@
 
 <body>
 	<header>
-		<img class="logo" src="images/logo.png" alt="logo">
-		<img class="locatie" src="images/Locatie.png" alt="locatie">
+		<section>
+			<img class="logo" src="images/logo.png" alt="logo">
+			<img class="locatie" src="images/Locatie.png" alt="locatie">
+			<p>Een vestiging zoeken</p>
+
+		</section>
+
 
 		<nav>
+			<button aria-hidden="true"></button>
 			<ul>
-				<li><a href="#">Koffie</a></li>
+				<li><a class="active" href="#">Koffie</a></li>
 				<li><a href="#">Menu</a></li>
 				<li><a href="#">Koffiehuis</a></li>
 				<li><a href="#">Carrière</a></li>
@@ -30,52 +45,43 @@
 	</header>
 
 	<main>
-		<!-- Sections met tekst, achtergrondfoto komt in css-->
 		<section>
-			<!-- plaatje 1 -->
-			<h1>Now it's the holidays</h1>
+			<img src="./images/foto1.jpg">
+			<h1>NOW IT'S THE <span>HOLIDAYS</span></h1>
+
 
 			<ul>
-				<li>+ New +</li>
-				<li>+ New +</li>
-			</ul>
-
-			<ul>
-				<li>Fudge brownie hot chocolate</li>
+				<li> <span>+ New +</span> Fudge brownie hot chocolate</li>
 				<li>Toffee nut latte</li>
 				<li>Gingerbread latte</li>
-				<li>Stroopwafel latte</li>
+				<li> <span>+ New +</span> Stroopwafel latte</li>
 			</ul>
 		</section>
 
 		<section>
-			<!-- plaatje 2 -->
-			<h1>€8,95 Lunch deal, kies jouw favorieten</h1>
-			<h2>'Jouw Starbucks® menu'</h2>
+			<img src="./images/foto2.png">
+			<h2>€8,95 Lunch deal, kies jouw favorieten</h2>
+			<h3>'Jouw Starbucks® menu'</h3>
 		</section>
 
 		<section>
-			<!-- plaatje 3 -->
-			<h1>Jouw bestelling met liefde bezorgd</h1>
-			<h2>Starbucks® bezorgd</h2>
+			<img src="./images/foto3.png">
+			<h2>Jouw bestelling met liefde bezorgd</h2>
+			<h3>Starbucks® bezorgd</h3>
 		</section>
 
 		<section>
-			<!-- plaatje 4 -->
-			<h1>Probeer nu deze winterse favoriet in een compleet nieuwe jasje.</h1>
+			<img src="./images/foto4.png">
+			<h2>Probeer nu deze winterse favoriet in een compleet nieuwe jasje.</h2>
 		</section>
-
-
-		<!-- <img class="foto1home" src="images/foto1.jpg" alt="foto1"> -->
-		<!-- <img src="images/foto2.png" alt="foto2"> -->
-		<!-- <img src="images/foto3.png" alt="foto3"> -->
-		<!-- <img src="images/foto4.png" alt="foto4"> -->
 
 
 
 	</main>
 
-	<script src="scripts/script.js"></script>
+	<script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 
 </html>
+
+<!-- // https://nl.wikibooks.org/wiki/Programmeren_in_JavaScript/Plaats_binnen_HTML -->
