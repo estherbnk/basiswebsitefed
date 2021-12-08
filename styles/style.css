@@ -15,7 +15,7 @@
 header{
     background-color: #F7F7F7;
     display: grid;
-    grid-template-columns:min-content;
+    grid-template-columns:max-content;
     align-items: center;
     top: 0;
 }
@@ -83,7 +83,7 @@ main section:first-of-type ul{
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding: 1em;
+  padding:1em;
 }
 
 
@@ -166,6 +166,11 @@ a{
   text-decoration: none;
 }
 
+
+footer img{
+  display: flex;
+  align-self: flex-end;
+}
 
 
 /* MENU */
@@ -261,3 +266,4 @@ nav ul{
   background: none;
 
 }
+
