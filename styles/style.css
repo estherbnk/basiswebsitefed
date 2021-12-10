@@ -1,34 +1,29 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+Pro:wght@600&display=swap');
-
-
-header{
-    background-color: #F7F7F7;
-    display: grid;
-    grid-template-columns:max-content;
-    align-items: center;
-    top: 0;
-}
 
 /* DEZE GAAT FOUT MET MENUUUUUUU */
-header section{
+header section {
+  background-color: #F7F7F7;
   display: flex;
   align-items: center;
+
+  z-index: 3;
+  position: relative;
 }
 
 
 /* height toegevoegd omdat het anders smaller werd */
-img.logo{
+img.logo {
   min-width: 2em;
   max-width: 4em;
   min-height: 2em;
@@ -37,7 +32,7 @@ img.logo{
 
 
 /* height toegevoegd omdat het anders smaller werd */
-img.locatie{
+img.locatie {
   min-width: 2em;
   max-width: 4em;
   min-height: 2em;
@@ -46,7 +41,7 @@ img.locatie{
 }
 
 
-main section{
+.index main section {
   /* elementen in de section centreren */
   display: flex;
   flex-direction: column;
@@ -57,39 +52,41 @@ main section{
 }
 
 
-main section:first-of-type{
+.index main section:first-of-type {
   position: relative;
 }
 
 
-main section:first-of-type img{
+.index main section:first-of-type img {
   width: 100%;
 }
 
 
-main section:first-of-type h1{
+.index main section:first-of-type h1 {
   position: absolute;
   top: 1%;
   font-size: 9vw;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 2px 3px #1E3932;
 }
 
 
-main section:first-of-type ul{
+
+.index main section:first-of-type ul {
   position: absolute;
   top: 15%;
   font-size: 2vw;
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding:1em;
+  padding: 1em;
 }
 
 
 
 
-main section:first-of-type ul li{
+.index main section:first-of-type ul li {
   color: white;
   position: relative;
   width: 25%;
@@ -101,50 +98,227 @@ main section:first-of-type ul li{
 
 /* +new+ items gaan -0.5em boven de li items */
 /* left & right 0 betekent dat het de volledige breedte van li is */
-main section:first-of-type ul li span{
+.index main section:first-of-type ul li span {
   position: absolute;
   right: 0;
   left: 0;
   top: -0.5em;
+  text-shadow: none;
 }
 
 
-main section:nth-of-type(2){
+.index main section:nth-of-type(2) {
   background-color: #e50e35;
 }
 
 
-main section:nth-of-type(2) img{
+.index main section:nth-of-type(2) img {
   width: 90vw;
 }
 
 
-main section:nth-of-type(3){
+.index main section:nth-of-type(3) {
   background-color: #1E3932;
 }
 
 
-main section:nth-of-type(3) img{
+.index main section:nth-of-type(3) img {
   width: 90vw;
 }
 
 
-main section:nth-of-type(4){
+.index main section:nth-of-type(4) {
   background-color: #e50e35;
 }
 
 
-main section:nth-of-type(4) img{
+.index main section:nth-of-type(4) img {
   width: 90vw;
 }
 
-main span{
+.index main span {
   color: #1E3932;
+  text-shadow: 2px 3px white;
+}
+
+
+/* OVER ONS PAGINA */
+
+body.overons main section {
+  background-color: white;
+}
+
+.overons main section img {
+  padding: 1em;
+  width: 70%;
+  height: auto;
+}
+
+.overons main{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.overons main section:last-of-type{
+  margin: 2em;
+}
+
+@media screen and (max-width:40em){
+  .overons main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.overons nav ul li:first-of-type{
+  text-transform: uppercase;
+}
+
+
+.overons main nav ul {
+  display: grid;
+  padding: 1em;
+  position: relative;
+}
+
+
+.overons span{
+  color: #2a8a15;
 }
 
 
 
-h2{
+/* MENU */
+
+/* menu button */
+header section button {
+  margin-left: auto;
+  border: none;
+
+  position: relative;
+  z-index: 100;
+
+  background-color: #F7F7F7;
+}
+
+
+header section button::before {
+  content: "\2630";
+  /* hamburger menu */
+  transform: scale(.75);
+  width: 2em;
+  height: 1em;
+  font-size: 20px;
+}
+
+button.toonMenu::before {
+  content: "\274C";
+  /* kruisje */
+}
+
+/* menu met de linkjes naar pagina's */
+nav ul {
+  list-style: none;
+  padding: 3em;
+  /* padding 3em voor de bovenkant */
+  background-color: black;
+
+  display: none;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform-origin: top center;
+  transition: .5s;
+
+  z-index: 2;
+
+  flex-direction: column;
+}
+
+nav.toonMenu ul {
+  transform: scaleY(1);
+}
+
+/* een linkje in de menulijst */
+nav li {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  padding: .25em 1em;
+  border: none;
+}
+
+@media (min-width:64em) {
+  nav {
+    justify-self: center;
+    order: 0;
+  }
+}
+
+
+ul.toonMenu {
+  display: flex;
+  animation: toonMenu 1s forwards;
+}
+
+@keyframes toonMenu {
+  0% {
+    z-index: 2;
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    z-index: 2;
+    transform: translateY(0vh)
+  }
+}
+
+
+footer{
+  background-color: #F7F7F7;
+}
+
+footer details{
+  font-family: 'Lato', sans-serif;
+  border-bottom: 1px solid gray;
+}
+
+footer details summary{
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+footer details summary:hover{
+  color: gray;
+}
+
+footer section{
+  background-color:#F6F6F6;
+  padding: 2em;
+}
+
+footer section:first-of-type img{
+  max-width: 1.3em;
+  height: auto;
+}
+
+footer section:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+}
+
+footer section:nth-of-type(2) img{
+  max-width: 2em;
+  height: 1em;
+}
+
+h2 {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 6vw;
@@ -153,117 +327,50 @@ h2{
 }
 
 
-h3{
+h3 {
   color: white;
   font-family: 'Courgette', cursive;
   font-size: 5vw;
   padding: 1em;
 }
 
+h4 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  padding: 0.5em;
+}
 
-a{
+h5 {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  padding: 0.5em;
+}
+
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  display: flex;
+  padding: 1em;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-size: 14px;
   color: white;
   text-decoration: none;
 }
 
 
-footer img{
-  display: flex;
-  align-self: flex-end;
+a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 
-/* MENU */
-
-/* menu button */
-nav button{
-  width: 1em;
-  height: 1em;
-  border: none;
-
-  position: relative;
-  z-index: 100;
+a:hover {
+  background-color: #DB0032;
 }
-
-/* om menu boven de rest vd items te krijgen in header */
-/* nav {
-  order:-1;  
-} */
-
-button{
-  position: relative;
-  left: 25em;
-  bottom: 5em;
-  background-color: white;
-}
-
-
-nav button::before{ 
-  content: "\2630 ";  /* hamburger menu */
-  transform: scale(.75); 
-  width: 2em;
-  height: 1em;
-  font-size: 20px;
-}
-
-
-nav.toonMenu button::before{
-  content: "/274C"; /* kruisje */
-}
-
-
-/* menu met de linkjes naar pagina's */
-nav ul{
-  list-style: none;
-  padding: 3em; /* padding 3em voor de bovenkant */
-  background-color: black;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  transform: scaleY(0);
-  transform-origin: top center;
-  transition: .5s;
-
-  z-index: 99;
-}
-
-nav.toonMenu ul{
-  transform: scaleY(1);
-}
-
-/* een linkje in de menulijst */
-nav li{
-  margin: 0;
-  padding: 0;
-}
-
-nav a{
-  display: flex;
-  align-items: center;
-  padding: .25em 1em;
-  border: none;
-}
-
-@media (min-width:64em){
-  nav{
-    justify-self: center;
-    order: 0;
-  }
-}
-
-/* nav button{
-  display: none;
-} */
-
-nav ul{
-  position: absolute;
-  transform: none;
-
-  display: flex;
-
-  padding: 0;
-  background: none;
-
-}
-
