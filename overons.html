@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over ons</title>
 
-    <link href="./styles/style.css" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+	<title>Over ons</title>
+
+	<link href="./styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image" href="images/logo.png">
 </head>
-<body>
 
-    <header>
+<body class="overons">
+
+	<header>
 		<section>
-			<img class="logo" src="images/logo.png" alt="logo">
-			<img class="locatie" src="images/Locatie.png" alt="locatie">
+			<img class="logo" src="./images/logo.png" alt="logo">
+			<img class="locatie" src="./images/Locatie.png" alt="locatie">
 			<p>Een vestiging zoeken</p>
-
+			<button aria-hidden="true"></button>
 		</section>
 
 
 		<nav>
-			<button aria-hidden="true"></button>
 			<ul>
-				<li><a class="active" href="#">Koffie</a></li>
+				<li><a href="#">Koffie</a></li>
 				<li><a href="#">Menu</a></li>
 				<li><a href="#">Koffiehuis</a></li>
 				<li><a href="#">Carrière</a></li>
@@ -33,19 +39,96 @@
 		</nav>
 	</header>
 
-    <main>
-        <img src="images/overonsfoto.jpeg" alt="over ons">
+	<main>
+		<section>
+			<h4>Over ons</h4>
 
-        <p>Het is maar een kort moment – gewoon een hand die over de toonbank een beker aanreikt aan een andere uitgestoken hand.</p>
-        <p>Maar er is connectie.</p>
-        <p>We zorgen dat alles wat we doen in het teken staat van die verbinding – van ons streven naar koffie van de beste kwaliteit ter wereld tot de manier waarop we ons samen met onze klanten en onze omgeving inzetten voor verantwoord zaken doen.</p>
-        <p>Over Ons</p>
+			<h5>Het gebeurt elke week miljoenen keren - een klant krijgt iets te drinken van een barista van Starbucks -
+				maar elke keer is uniek.</h5>
 
-    </main>
-    
-    <footer>
-		<img src="./images/wordmark_footer_tcm15-397.png">
+			<img src="images/overonsfoto.jpeg" alt="over ons">
+
+			<p>Het is maar een kort moment – gewoon een hand die over de toonbank een beker aanreikt aan een andere
+				uitgestoken hand.
+			</p>
+			<p>Maar er is connectie.</p>
+			<p>We zorgen dat alles wat we doen in het teken staat van die verbinding – van ons streven naar koffie van
+				de beste kwaliteit ter wereld tot de manier waarop we ons samen met onze klanten en onze omgeving
+				inzetten voor verantwoord zaken doen.</p>
+			<p>Vanaf het begin, met één vestiging bijna veertig jaar geleden, hebben we overal waar we zijn geweest en
+				bij alles wat we aanraken geprobeerd het wat beter te maken dan we het aantroffen.</p>
+
+			<p>Over Ons</p>
+		</section>
+
+		<section>
+			<nav>
+				<ul>
+					<li> <a href="#"> <span>Over ons</span></a> </li>
+					<li> <a href="#"> Onze geschiedenis</a> </li>
+					<li> <a href="#"> Ons bedrijf</a> </li>
+					<li>  <a href="#">Onze Starbucks Missie </a> </li>
+				</ul>
+			</nav>
+		</section>
+
+	</main>
+
+	<footer>
+
+		<section>
+			<img src="./images/facebook.png" alt="facebook logo">
+		</section>
+
+
+		<details>
+			<summary>Over ons</summary>
+			<ul>
+				<li>Onze geschiedenis</li>
+				<li>Ons bedrijf</li>
+				<li>Werken bij Starbucks</li>
+			</ul>
+		  </details>
+
+		  <details>
+			<summary>Klantenservice</summary>
+			<ul>
+				<li>Onze geschiedenis</li>
+				<li>Ons bedrijf</li>
+				<li>Werken bij Starbucks</li>
+			</ul>
+		  </details>
+
+		  <details>
+			<summary>Voor het bedrijfsleven</summary>
+			<ul>
+				<li>Licensing</li>
+				<li>Foodservices</li>
+				<li>Premium Self-Serve</li>
+				<li>Seattle's Best Coffee</li>
+			</ul>
+		  </details>
+
+		  <details>
+			<summary>Handige Links</summary>
+			<ul>
+				<li>Vestiging zoeken</li>
+				<li>Voor partners</li>
+			</ul>
+		  </details>
+
+		  <section>
+			<img src="./images/taal.png" alt="nederlandse vlag">
+
+			<p>Netherlands</p>
+			<p>English (NL)</p>
+		  </section>
+
+
 	</footer>
 
+
+	<script type="text/javascript" src="./scripts/script.js"></script>
 </body>
+
 </html>
