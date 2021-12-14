@@ -40,11 +40,11 @@ https://www.starbucks.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepagina  
-<img src="images/homepagina.png" width="375px" alt="homepagina">
+<img src="./images/homepagina.png" width="375px" alt="homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Over ons  
-<img src="images/overonspagina.png" width="375px" alt="over ons pagina">
+<img src="./images/overonspagina.png" width="375px" alt="over ons pagina">
  
 </details>
 
@@ -56,13 +56,11 @@ Over ons
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/homeschets.png" width="375px" alt="homepagina schets">
+<img src="./images/homeschets.png" width="375px" alt="homepagina schets">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/overonsschets.png" width="375px" alt="over onspagina schets">
+<img src="./images/overonsschets.png" width="375px" alt="over onspagina schets">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -76,26 +74,19 @@ Over ons
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb geen screenshots gemaakt van mijn code maar het bestond deze week alleen nog maar uit de basic HTML.
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+Wij hebben niet samen met het groepje besloten waar we het over wilde hebben we hebben individuele vragen gesteld.
+Ik had een vraag over de home pagina, dit ging om de plaatjes. Ik had ze eerst allemaal als background image maar het lukte niet om de tekst er midden op te krijgen.
+<img src="./images/homepaginaplaatjes" alt="homepagina plaatjes">
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+-  Ik heb om hulp gevraagd met de plaatjes en toen kreeg ik het uitgelegd in Codepen
+-  https://codepen.io/robertspier/pen/KKvOoBg?editors=0100
+-  verder klopte mijn site 
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -109,26 +100,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik was goed op dreef met de eerste pagina, de plaatjes en tekst heb ik namelijk in de werkgroep responsive kunnen maken. Ook heb ik een klein begin gemaakt aan de tweede pagina.
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+We hebben het er weer niet samen met het groepje over gehad.
+Ik had een vraag over het menu in de header.
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+-  Ik ben vooral geholpen met flexbox want ik ben daar niet zo goed in.
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -142,30 +123,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+- De onderdelen werden juist benoemd
+- De screenreader ging niet automatisch verder
+- Interactieve onderdelen
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Onderdelen
+De onderdelen in mijn pagina werden juist benoemd, dus bijvoorbeeld een list en link
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Screenreader
+De screenreader las niet automatisch de pagina maar ik kwam erachter dat ik zelf verder moest scrollen en dat dan pas de tekst wordt voorgelezen
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Interactieve onderdelen
+Ik heb niet zoveel interactieve onderdelen op mijn hoofdpagina dus die werden niet
 
 </details>
 
@@ -179,26 +148,15 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Hier was ik bezig met de laatste details. Ik liep tegen heel veel dingen aan en ik heb ook heel veel hulp gevraagd bij de student-assistenten en Casper. Uiteindelijk is het me wel gelukt om de footer responsive te maken met de media tag. 
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+We hebben wederom niet met het groepje besproken waar we het over wilden hebben
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- ik ben geholpen met de footer, met behulp van een mediatag heb ik die responsive kunnen maken
+- ook heb ik dit geprobeerd bij het menu bovenin de header maar dat is helaas niet gelukt. Na de meeting heb ik nog 2 keer gebeld met de student-assistent en met Casper maar het is me echt niet gelukt om het responsive te maken.
 
 </details>
 
@@ -212,11 +170,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Al met al vond ik het echt heel lastig om deze website na te maken. Ik ben wel trots op het eindresultaat maar ik vind het jammer dat ik het menu bovenin de header niet responsive heb kunnen maken. Ookal heb ik wel veel om hulp gevraagd het is uiteindelijk toch niet gelukt. Ook heb ik heel erg veel gebruik gemaakt van bronnen omdat ik steeds tegen kleine dingen aanliep en door de bronnen begreep ik het meestal wel.
 
 ### Screenshot(s)
-
-hier screenshot(s) van je eindresultaat
+<img src=",/images/index1mobile.png" alt="homepagina mobile versie">
+<img src=",/images/index1desktop.png" alt="homepagina desktop versie">
+<img src=",/images/overons1mobile.png" alt="over ons pagina mobile versie">
+<img src=",/images/overons1desktop.png" alt="over ons pagina dekstop versie">
 
 </details>
 
@@ -231,8 +191,16 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://codepen.io/shooft/pen/vYZKQPX voor flexbox in het algemeen
+2. https://codepen.io/robertspier/pen/KKvOoBg?editors=0100 voor de eerste pagina, om het plaatje juist te krijgen met de tekst in het midden
+2. https://codepen.io/shooft/pen/dyRVVRr voor het menu
+2. https://codepen.io/shooft/pen/gOrJdGG?editors=1100 voor de focus en hover in het menu
+3. https://www.w3schools.com/cssref/css3_pr_text-shadow.asp voor de h1 schaduw
+4. vhttps://codepen.io/shooft/pen/abwLyvm?editors=0100 voor het menu in de over ons pagina
+5. https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_details footer
+6. https://www.w3schools.com/cssref/pr_text_text-transform.asp om tekst uppercase te maken
+7. https://codepen.io/Chaspyr/pen/RwLKyav om te kijken of het menu bovenin lukt
+8. https://www.w3schools.com/css/css_font_fallbacks.asp voor fallback fonts
+9. https://www.w3schools.com/cssref/css3_pr_mediaquery.asp om de media tag te begrijpen
 
 </details>
